@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background: url(/images/pattern-background-desktop.svg) no-repeat,
+    #E0E8FF;
+    background-size: contain;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.card {
+    width: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.banner-container {
+    width: 100%;
+}
+
+.banner-img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    display: block;
+}
+
+.main-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 1em 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2em;
+    
+} 
+
+#subtitle {
+    color: #717FA6;
+}
+
+.choose-plan {
+    padding: 0.6em 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F7F9FF; /* fond */
+    border-radius: 1em;
+}
+
+.choice > * {
+    padding: 0.5em;
+    margin: 0;
+}
+
+#annual {color: #1F2E55;}
+#price {color: #717FA6;}
+
+#pay-button {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    background-color: #382AE1;
+    color: #fff;
+    padding: 1em;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 0px 8px 10px 5px rgb(197, 197, 197);
+}
+
+#change:hover, #change:focus {
+    color: #766cf1;
+    text-decoration: none;
+}
+
+#pay-button:hover, #pay-button:focus {
+    background-color: #766CF1;
+}
+
+#change, #pay-button, #cancel {
+    cursor: pointer;
+}
+
+#cancel {
+    text-decoration: none;
+    color: #717FA6;
+}
+
+#cancel:hover {
+    color: #1F2E55;
+}
+
+.attribution {
+    position: static;
+    bottom: 0;
+    left: 40%;
+    padding-bottom: 1em;
+    padding-top: 2em;
+}
+
+/* MEDIA QUERIES */ 
+@media screen and (max-width: 768px)  {
+    body {
+        background: url(/images/pattern-background-mobile.svg) no-repeat;
+        background-size: cover;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .card {
+        height: 80%;
+    }
+    
+    .main-section {
+        padding: 0.8em 0.8em;
+        gap: 1em;
+    }
+
+}
